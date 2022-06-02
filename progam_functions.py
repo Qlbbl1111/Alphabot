@@ -15,7 +15,7 @@ def joinguild(guild):
         return
     else:
         with open(f'./guildfiles/{guild}.json', 'w') as f:
-            f.write(f"{{\"id\": {guild}, \"highscore\": "", \"channel\": 0, \"currentnum\": 0, \"currentletter\": "", \"currentuser\": 0, \"date\": \"\"}}")
+            f.write(f"{{\"id\": {guild}, \"highscore\": \"\", \"channel\": 0, \"currentnum\": 0, \"currentletter\": \"\", \"currentuser\": 0, \"date\": \"\"}}")
 
 def updatechannelid(channelid, guild):
     with open(f'./guildfiles/{guild}.json', 'r') as f:
