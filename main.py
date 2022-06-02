@@ -220,7 +220,7 @@ async def help(ctx):
     checkfiles(ctx.guild.id)
     await ctx.send(content=None, embed=discord.Embed.from_dict(
     {
-      "title": "Alphabet Bot Help",
+      "title": "Alphabot Help",
       "color": 0,
       "description": "This is a list of commands and their descriptions.",
       "timestamp": "",
