@@ -184,8 +184,11 @@ async def on_message_delete(message):
     channel = bot.get_channel(_id)
     user = loaduser(message.guild.id)
     msg = message.content
-    msg = msg.split()
-    msg = msg[0]
+    try:
+        msg = msg.split()
+        msg = msg[0]
+    except:
+        pass
     if re.search("^[a-zA-Z]", msg) == None:
         return
 
